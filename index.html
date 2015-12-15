@@ -1,0 +1,195 @@
+
+<!-- saved from url=(0034)http://www.gethifi.com/tools/regex -->
+<html class="hb-loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> 
+		<title>HiFi Regex Tester - Live JavaScript Regular Expression Tester</title> 
+		<meta name="description" content="Learn, practice, and test regular expressions with this free javascript tool. Regex validity and matches are displayed in real-time as you type. 100% JavaScript and free."> 
+		<link rel="stylesheet" href="./HiFi Regex Tester_files/style.2.css" type="text/css" media="screen"> 
+		<script type="text/javascript" src="./HiFi Regex Tester_files/jquery.min.js"></script><style type="text/css" adt="123"></style><style type="text/css"></style> 
+		<script type="text/javascript" src="./HiFi Regex Tester_files/regexp.5.js"></script> 
+		<script type="text/javascript"> 
+				tweetmeme_url = 'http://www.gethifi.com/regexp/'; 
+				tweetmeme_style = 'compact';
+				digg_skin = 'compact'; digg_window = 'new';
+		</script> 
+	<style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style><meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;Google Analytics&quot;:-1,&quot;jQuery&quot;:&quot;1.3.2&quot;}"><script type="text/javascript" src="chrome-extension://fhhdlnnepfjhlhilgmeepgkhjmhhhjkh/js/detector.js"></script></head> 
+	<body huaban_collector_injected="true"> 
+		<div id="header"> 
+			<div id="logo"><a href="http://www.gethifi.com/">HiFi</a></div> 
+			<div id="showAbout"><a href="http://www.gethifi.com/tools/regex#">About the Regex Tester</a></div> 
+			<div id="social"> 
+			</div> 
+		</div> 
+		<div id="container"> 
+			<div id="tool"> 
+				<div id="regexPane" class="match"> 
+					<div id="regexPaneInputs"> 
+						<dl> 
+							<dt><label for="regex">Regular Expression</label></dt> 
+							<dd>/<input type="text" id="regex" value="([a-z]*), (\S*), and (\w*)">/<span id="regexFlagsPlaceHolder">g</span></dd> 
+							<dt>Flags:</dt> 
+							<dd> 
+								<ul id="regexFlags"> 
+									<li>Flags: </li> 
+									<li><input type="checkbox" id="globalFlag" checked="checked"> <label for="globalFlag">g - Global</label></li> 
+									<li><input type="checkbox" id="insensitiveFlag"> <label for="insensitiveFlag">i - Insensitive</label></li> 
+									<li><input type="checkbox" id="multilineFlag"> <label for="multilineFlag">m - Multiline</label></li> 
+								</ul> 
+							</dd> 
+						</dl> 
+					</div> 
+				</div> 
+				<div id="haystackPane"> 
+					<div id="haystackPaneText">Regular expressions can be a pain. This tool is designed to help developers <span class="match"><span class="group-1">learn</span>, <span class="group-2">practice</span>, and <span class="group-3">compose</span></span> regular expressions.<br> <br>The HiFi RegExp tool is 100% JavaScript using jQuery. This tool was created by New Media Campaigns, the team behind HiFi, a next-generation CMS for web <span class="match"><span class="group-1">designers</span>, <span class="group-2">developers</span>, and <span class="group-3">agencies</span></span>. Enjoy!</div> 
+					<div id="haystackPaneInputs"> 
+						<dl> 
+							<dt><label for="haystack">Input Text</label></dt> 
+							<dd><textarea id="haystack">Regular expressions can be a pain. This tool is designed to help developers learn, practice, and compose regular expressions.
+ 
+The HiFi RegExp tool is 100% JavaScript using jQuery. This tool was created by New Media Campaigns, the team behind HiFi, a next-generation CMS for web designers, developers, and agencies. Enjoy!</textarea></dd></dl> 
+					</div> 
+				</div> 
+				<div id="matchesPane"><table><thead><tr><td id="matchNumber"></td><td>Matched Text</td><td class="group-1">$1</td><td class="group-2">$2</td><td class="group-3">$3</td></tr></thead><tbody><tr><td>1</td><td title="learn, practice, and compose">learn, practice, and...</td><td class="group-1" title="learn">learn</td><td class="group-2" title="practice">practice</td><td class="group-3" title="compose">compose</td></tr><tr><td>2</td><td title="designers, developers, and agencies">designers, developer...</td><td class="group-1" title="designers">designers</td><td class="group-2" title="developers">developers</td><td class="group-3" title="agencies">agencies</td></tr></tbody></table></div> 
+				<div id="codePane"><div id="code"><span id="regexCode">var regex = /([a-z]*), (\S*), and (\w*)/g;</span> 
+<span id="matchInputOutput">var input = "your input string";</span> 
+if(regex.test(input)) {
+  <span id="matchInputOnce" style="display: none;">var match = input.match(regex);
+  alert(match);</span><span id="matchInputGlobal">var matches = input.match(regex);
+  for(var match in matches) {
+	alert(matches[match]);
+  }</span> 
+} else {
+  alert("No matches found!");
+}</div> 
+				</div> 
+			</div> 
+			<div id="sidebar"> 
+				<div id="credits"> 
+					<div id="nmcLogo"><a href="http://www.newmediacampaigns.com/"><img title="A New Media Campaigns Project" src="./HiFi Regex Tester_files/nmc-logo.png"></a></div> 
+					<div id="hifiMention"><a href="http://www.gethifi.com/"><img title="HiFi - The CMS for Front-end Developers" src="./HiFi Regex Tester_files/hifi-ad.jpg"></a></div> 
+				</div> 
+				<div id="cheatSheet"> 
+					<h2>Regular Expression Syntax</h2> 
+					<h3 class="selected">General</h3> 
+					<dl id="cheatGeneral"> 
+						<dt>Choice</dt> 
+						<dd><code>Sequence | <em>Sequence</em> | <em>...</em></code></dd> 
+						<dt>Sequence</dt> 
+						<dd><code>Factor <em>Quantifier ...</em></code></dd> 
+						<dt>Factor</dt> 
+						<dd> 
+							<ul> 
+								<li>Groups</li> 
+								<li>Classes</li> 
+								<li>Characters &amp; Escapes</li> 
+							</ul> 
+						</dd> 
+						<dt>Quantifier</dt> 
+						<dd> 
+							<ul> 
+								<li><code>*</code> 0 or more times</li> 
+								<li><code>?</code> 0 or 1 times</li> 
+								<li><code>+</code> 1 or more times</li> 
+								<li><code>{N}</code> exactly N times</li> 
+								<li><code>{N,}</code> N or more times</li> 
+								<li><code>{N,M}</code> N through M times</li> 
+							</ul> 
+						</dd> 
+					</dl> 
+					<h3 class="">Groups</h3> 
+					<dl id="cheatGroups"> 
+						<dt>Capturing Group</dt> 
+						<dd><code>(RegExp)</code></dd> 
+						<dt>Non-capturing Group</dt> 
+						<dd><code>(?:RegExp)</code></dd> 
+						<dt>Non-greedy Matching</dt> 
+						<dd><code>(RegExp?)</code></dd> 
+						<dt>Backreference</dt> 
+						<dd><code>\1 ... \N</code></dd> 
+					</dl> 
+					<h3 class="">Classes</h3> 
+					<dl id="cheatClasses"> 
+						<dl> 
+							<dt>Basic</dt> 
+							<dd><code>[12345], [abcde]</code></dd> 
+							<dt>Ranges</dt> 
+							<dd><code>[1-5], [a-e]</code></dd> 
+							<dt>Complements "Not In"</dt> 
+							<dd><code>[^6-9], [^f-z]</code></dd> 
+							<dt>Characters Needing Escape</dt> 
+							<dd><code>- / [ \ ] ^</code></dd> 
+						</dl> 
+					</dl> 
+					<h3 class="">Chars</h3> 
+					<dl id="cheatCharacters"> 
+						<dt>Characters</dt> 
+						<dd>Any Unicode character except: <br> 
+							<code>/\ [] () {} ? + * | special/ctrl- char</code> 
+						</dd> 
+						<dt>Special Characters</dt> 
+						<dd> 
+							<ul> 
+								<li><code>^</code> Start of Line</li> 
+								<li><code>$</code> End of Line</li> 
+								<li><code>.</code> Any character except end of line</li> 
+							</ul> 
+						</dd> 
+						<dt>Escapes</dt> 
+						<dd> 
+							<table> 
+								<tbody><tr> 
+									<td><code>\d</code></td><td>Digit</td> 
+									<td><code>\D</code></td><td>Non-digit</td> 
+								</tr> 
+								<tr> 
+									<td><code>\s</code></td><td>Whitespace</td> 
+									<td><code>\S</code></td><td>Non-whitespace</td> 
+								 
+								</tr><tr> 
+									<td><code>\w</code></td><td>"Word"</td> 
+									<td><code>\W</code></td><td>Non-"Word"</td> 
+								</tr> 
+								<tr> 
+									<td><code>\n</code></td><td>New Line</td> 
+									<td><code>\f</code></td><td>Formfeed</td> 
+								</tr> 
+								<tr> 
+									<td><code>\t</code></td><td>Tab</td> 
+									<td><code>\r</code></td><td>Carriage Return</td> 
+								</tr> 
+								<tr> 
+									<td colspan="4"><code>\uNNNN</code> Unicode where N is hex</td> 
+								</tr> 
+							</tbody></table> 
+						</dd> 
+					</dl> 
+				<div id="selectedContent"><dl id="cheatGeneral"> 
+						<dt>Choice</dt> 
+						<dd><code>Sequence | <em>Sequence</em> | <em>...</em></code></dd> 
+						<dt>Sequence</dt> 
+						<dd><code>Factor <em>Quantifier ...</em></code></dd> 
+						<dt>Factor</dt> 
+						<dd> 
+							<ul> 
+								<li>Groups</li> 
+								<li>Classes</li> 
+								<li>Characters &amp; Escapes</li> 
+							</ul> 
+						</dd> 
+						<dt>Quantifier</dt> 
+						<dd> 
+							<ul> 
+								<li><code>*</code> 0 or more times</li> 
+								<li><code>?</code> 0 or 1 times</li> 
+								<li><code>+</code> 1 or more times</li> 
+								<li><code>{N}</code> exactly N times</li> 
+								<li><code>{N,}</code> N or more times</li> 
+								<li><code>{N,M}</code> N through M times</li> 
+							</ul> 
+						</dd> 
+					</dl></div></div> 
+			</div> 
+		<div id="footer">Copyright © 2010 <a href="http://www.newmediacampaigns.com/">New Media Campaigns</a>. Sponsored by the <a href="http://www.gethifi.com/">HiFi CMS for Designers</a>.</div> 
+		</div> 
+	 
+
+</body></html>
