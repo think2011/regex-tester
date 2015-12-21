@@ -168,8 +168,8 @@ $(document).ready(function() {
 						}
 						searchString += "$";
 						matchString = encode(matchString).replace(new RegExp(searchString), replaceString);
-								
-						highlight += before + "<span class=\"match\">" + matchString + "</span>";
+
+						highlight += before + "<span class=\"match\">" + (matchString === '<br />' ? 	' <br />' : matchString) + "</span>";
 						startPosition = endPosition;
 					}
 					highlight += encode(text.slice(endPosition));
